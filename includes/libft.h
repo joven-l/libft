@@ -6,7 +6,7 @@
 /*   By: joloo <joloo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 16:03:32 by joloo             #+#    #+#             */
-/*   Updated: 2025/07/15 13:39:59 by joloo            ###   ########.fr       */
+/*   Updated: 2025/07/26 10:50:34 by joloo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,7 +114,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 // get_next_line
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 69
+#  define BUFFER_SIZE 2
 # endif
 
 typedef struct s_gnl
@@ -124,15 +124,7 @@ typedef struct s_gnl
 	char			*buffer;
 	struct s_gnl	*next;
 }					t_gnl;
-t_gnl	*find_fd_gnl(int fd, t_gnl **lst);
-char	*extract_line_gnl(t_gnl *lst);
-int		read_fd_gnl(t_gnl *lst, int fd);
 char	*get_next_line(int fd);
-char	*ft_substr_gnl(char *buffer, int start, int len);
-int		find_nl_gnl(t_gnl *lst);
-char	*ft_substr_gnl(char *buffer, int start, int len);
-void	ft_realloc_gnl(char **buffer, int start, int old_size, int new_size);
-void	free_list_gnl(t_gnl *lst, t_gnl **head);
 
 // printf
 int		ft_printf(const char *format, ...);
