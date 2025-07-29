@@ -6,7 +6,7 @@
 /*   By: joloo <joloo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 16:03:32 by joloo             #+#    #+#             */
-/*   Updated: 2025/07/26 10:50:34 by joloo            ###   ########.fr       */
+/*   Updated: 2025/07/29 13:05:36 by joloo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdarg.h>
 # include <stdio.h>
 # include <fcntl.h>
 # include <errno.h>
@@ -82,7 +81,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strnstr_2d(char **big, char *little, size_t arrlen, size_t len);
 int		ft_strchr_pos(const char *str, int c, int size);
 void	ft_strrev(char *result);
-char	*ft_vstrjoin(int count, ...);
 
 // io
 void	ft_putchar_fd(char c, int fd);
@@ -127,16 +125,17 @@ typedef struct s_gnl
 char	*get_next_line(int fd);
 
 // printf
-int		ft_printf(const char *format, ...);
-int		ft_printf_char(va_list args);
-int		ft_printf_str(va_list args);
-int		ft_printf_num(va_list args);
-int		ft_printf_unum(va_list args);
-int		ft_printf_perc(va_list args);
-int		ft_printf_ptr(va_list args);
-int		ft_printf_hex(va_list args);
-int		ft_printf_hex_upper(va_list args);
-int		ft_printf_str_arr(va_list args);
-int		ft_printf_gnl(va_list args);
+// int		ft_printf(const char *format, ...);
+// int		ft_printf_char(va_list args);
+// int		ft_printf_str(va_list args);
+// int		ft_printf_num(va_list args);
+// int		ft_printf_unum(va_list args);
+// int		ft_printf_perc(va_list args);
+// int		ft_printf_ptr(va_list args);
+// int		ft_printf_hex(va_list args);
+// int		ft_printf_hex_upper(va_list args);
+// int		ft_printf_str_arr(va_list args);
+// int		ft_printf_gnl(va_list args);
+// char	*ft_vstrjoin(int count, ...);
 
 #endif

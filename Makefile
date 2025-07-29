@@ -23,9 +23,6 @@ $(CONV_DIR)/ft_atoi.c \
 $(CONV_DIR)/ft_itoa.c \
 $(CONV_DIR)/ft_atoi_arr.c \
 $(CONV_DIR)/ft_atoi_arr.c \
-$(IO_DIR)/ft_printf_basic.c \
-$(IO_DIR)/ft_printf.c \
-$(IO_DIR)/ft_printf_hard.c \
 $(IO_DIR)/ft_putchar_fd.c \
 $(IO_DIR)/ft_putendl_fd.c \
 $(IO_DIR)/ft_putlong_base.c \
@@ -80,13 +77,15 @@ $(STRING_DIR)/ft_strrchr.c \
 $(STRING_DIR)/ft_strtrim.c \
 $(STRING_DIR)/ft_substr.c \
 $(STRING_DIR)/ft_subarr_str.c \
-$(STRING_DIR)/ft_vstrjoin.c \
 $(STRING_DIR)/ft_strnstr_2d.c \
 $(STRING_DIR)/ft_strarr_len.c \
 $(STRING_DIR)/ft_strarr_strlen.c \
 $(STRING_DIR)/ft_flatten.c\
 $(STRING_DIR)/ft_strarrdup.c \
-
+# $(STRING_DIR)/ft_vstrjoin.c \
+# $(IO_DIR)/ft_printf_basic.c \
+# $(IO_DIR)/ft_printf.c \
+# $(IO_DIR)/ft_printf_hard.c \
 # CC=gcc
 # CFLAGS=-Wall -Wextra -Werror -ggdb3
 CC=cc
